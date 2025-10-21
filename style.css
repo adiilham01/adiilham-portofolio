@@ -400,6 +400,9 @@ text-align: center;
   font-size: 16px;
 }
 
+html, body {
+  overflow-x: hidden;
+}
 @media(max-width:1285px){
   #menu-icon{
     display: block;
@@ -407,8 +410,9 @@ text-align: center;
   .navbar{
     position: absolute;
     top: 100%;
-    right: 0;
-    width: 50%;
+    right: -100%;
+    width: 1000%;
+    transition: right 0.3s ease;
     padding: 1rem 3rem;
     background-color: rgba(0, 0, 0, 0.8);
     border-bottom-left-radius: 2rem;
@@ -424,6 +428,7 @@ text-align: center;
   }
   .navbar.active{
     display: block;
+    right: 0;
 
   }
   .gradient-btn{
