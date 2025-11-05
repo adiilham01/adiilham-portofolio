@@ -517,3 +517,83 @@ text-align: center;
     max-width: 200px;
   }
 }
+
+/* FOOTER DASAR (yang kamu sudah punya) */
+.footer{
+  background-color: var(--second-bg-color);
+  padding: 50px 0;
+}
+
+.footer .social-icon{
+  text-align: center;
+}
+
+.footer ul{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.footer ul li{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer ul li a{
+  color: white;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover{
+  border-bottom: 3px solid var(--main-color);
+}
+
+.footer .copyright{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+
+/* ===============================
+   RESPONSIVE FOOTER UNTUK HP
+================================ */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 10px;
+  }
+
+  .footer ul {
+    display: flex;
+    flex-direction: column; /* jadi vertikal */
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+  }
+
+  .footer ul li {
+    margin: 5px 0;
+  }
+
+  .footer .social-icon i {
+    font-size: 24px; /* kecilkan ikon */
+    margin: 0 8px;
+  }
+
+  .footer .copyright {
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer ul {
+    font-size: 1.2rem;
+  }
+
+  .footer .social-icon i {
+    font-size: 20px;
+  }
+}
+
